@@ -26,7 +26,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 
 # Initialize OpenAI client
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", "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"))
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", "enter your openai API key here"))
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
